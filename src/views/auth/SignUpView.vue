@@ -69,7 +69,7 @@ export default {
 
         async signUp() {
             try {
-                await this.signUp(this.username, this.email, this.passowrd);
+                await this.signup(this.username, this.email, this.passowrd);
             } catch (error) {
                 console.log('signup error', error)
             }

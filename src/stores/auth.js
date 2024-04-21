@@ -50,7 +50,7 @@ export const useAuthStore = defineStore('auth', {
     },
 
     async signup (username, email, password) {
-      const { access_token, refresh_token } = await authService.login(username, email, password);
+      const { access_token, refresh_token } = await authService.register(username, email, password);
 
       this.access_token = access_token;
       this.refresh_token = refresh_token;
